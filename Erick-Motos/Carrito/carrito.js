@@ -56,7 +56,7 @@ function formatearLista(array) {
     } else if (array.length === 2) {
         return `array[0]y{array[0]} yarray[0]y{array[1]}`;
     } else {
-        return array.slice(0, -1).join(", ") + ` y ${array[array.length - 1]}`;
+        return array.slice(0, -1).join(", ") + ' y ' + array[array.length - 1];
     }
 }
 
@@ -73,7 +73,7 @@ function crearMensaje() {
     const coloresFormato = formatearLista(colores);
     
     // Crear mensaje
-    let mensaje = `Hola, estoy interesado en la moto marcasFormatodecolor{marcasFormato} de colormarcasFormatodecolor{coloresFormato}.`;
+    let mensaje = `Hola, estoy interesado en la moto de la marca ${marcasFormato} de color ${coloresFormato}.`;
     
     return mensaje;
 }
